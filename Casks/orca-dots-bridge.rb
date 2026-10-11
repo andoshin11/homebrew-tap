@@ -7,7 +7,7 @@ cask "orca-dots-bridge" do
 
   url "https://github.com/andoshin11/orca-dots-bridge/releases/download/v#{version}/Orca-Dots-Bridge-#{version}-mac-#{arch}.zip"
   name "Orca Dots Bridge"
-  desc "Menu bar app connecting Orca agents on this Mac to ChatGPT dot"
+  desc "Menu bar app connecting local Orca agents to ChatGPT dot"
   homepage "https://github.com/andoshin11/orca-dots-bridge"
 
   livecheck do
@@ -15,7 +15,7 @@ cask "orca-dots-bridge" do
     strategy :github_latest
   end
 
-  depends_on macos: ">= :ventura"
+  depends_on macos: :ventura
 
   app "Orca Dots Bridge-darwin-#{arch}/Orca Dots Bridge.app"
 
