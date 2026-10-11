@@ -1,9 +1,9 @@
 cask "orca-dots-bridge" do
   arch arm: "arm64", intel: "x64"
 
-  version "0.3.2"
-  sha256 arm:   "a017f5f85c0c5b01799b99006c6e45f00166717ec92cb346d7808b86edc16b25",
-         intel: "12f369b982696f2909d51d52d2befeb748602413cf0bdca470467dc90ea1131b"
+  version "0.3.3"
+  sha256 arm:   "9aba6b9cee152a0f225b46392ca45f40ff1e524557c7a3ad9afedd45454de855",
+         intel: "16107bd5f19009077250de213aa00363273fb6c365ee843c2704b74ac97b640d"
 
   url "https://github.com/andoshin11/orca-dots-bridge/releases/download/v#{version}/Orca-Dots-Bridge-#{version}-mac-#{arch}.zip"
   name "Orca Dots Bridge"
