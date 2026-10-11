@@ -1,9 +1,9 @@
 cask "orca-dots-bridge" do
   arch arm: "arm64", intel: "x64"
 
-  version "0.2.1"
-  sha256 arm:   "b76a6a96579e475a12da1bfc376a88e7e5cac9e442aeb9c9dd0cee57041b880e",
-         intel: "c0b09891f3e6bd08b53cee38aaafdbb79cf3a8301bda2157cdded8a38ea7075b"
+  version "0.3.0"
+  sha256 arm:   "db3bdf43221d5e1de36e2d187a1ae8f1ce10b7f8534baeb1112e5fdeea222045",
+         intel: "7381fd1078b5b9efe97c49e25cce46f385ebf9bcb8aa19dbe7272f8a33dcfdf2"
 
   url "https://github.com/andoshin11/orca-dots-bridge/releases/download/v#{version}/Orca-Dots-Bridge-#{version}-mac-#{arch}.zip"
   name "Orca Dots Bridge"
@@ -23,7 +23,9 @@ cask "orca-dots-bridge" do
   zap launchctl: [
         "dev.orca-dots-bridge.notification-tunnel",
         "dev.orca-dots-bridge.notifications",
+        "dev.orca-dots-bridge.service",
         "dev.orca-dots-bridge.status-tunnel",
+        "dev.orca-dots-bridge.tunnel",
       ],
       trash:     "~/.orca-dots-bridge"
 
